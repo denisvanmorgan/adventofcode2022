@@ -3,7 +3,7 @@ use std::string::ToString;
 use std::io::Result;
 use crate::helper::file_read::{file_path, read_file};
 
-const EXERCISE_NAME: &str = "exercise2";
+const EXERCISE_NAME: &str = "day2";
 const ASCII_VALUE_OFFSET: u8 = 23;
 const ASCII_MIN_CHAR: u8 = 65;
 const ASCII_MAX_CHAR: u8 = 67;
@@ -73,7 +73,7 @@ fn part1(lines: &Vec<Result<String>>) -> () {
         score += value_map.get(&our_move).unwrap();
     }
 
-    println!("Exercise 2 - part 1: {}", score);
+    println!("Day 2 - part 1: {}", score);
 }
 
 fn get_winning_move(opponent_move: &u8) -> u8 {
@@ -118,5 +118,5 @@ fn part2(lines: &Vec<Result<String>>) -> () {
         score += value_map.get(&get_winning_move(&opponent_move)).unwrap();
     }
 
-    println!("Exercise 2 - part 2: {}", score);
+    println!("Day 2 - part 2: {}", score);
 }

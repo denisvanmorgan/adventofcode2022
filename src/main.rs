@@ -1,8 +1,8 @@
 mod helper;
-mod exercise1;
-mod exercise2;
+mod day1;
+mod day2;
 
 fn main() {
-    exercise1::exercise1::solve();
-    exercise2::exercise2::solve();
+    day1::day1::solve();
+    day2::day2::solve();
 }

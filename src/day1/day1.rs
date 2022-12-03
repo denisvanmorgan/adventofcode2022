@@ -2,7 +2,7 @@ use std::string::ToString;
 use std::io::Result;
 use crate::helper::file_read::{file_path, read_file};
 
-const EXERCISE_NAME: &str = "exercise1";
+const EXERCISE_NAME: &str = "day1";
 
 pub fn solve() -> () {
     let string_path = file_path(&EXERCISE_NAME.to_string());
@@ -33,7 +33,7 @@ fn part1(lines: &Vec<Result<String>>) -> () {
         next = next + line_str.parse::<i32>().unwrap();
     }
 
-    println!("Exercise 1 - part 1: {}", max);
+    println!("Day 1 - part 1: {}", max);
 }
 
 fn part2(lines: &Vec<Result<String>>) -> () {
@@ -66,5 +66,5 @@ fn part2(lines: &Vec<Result<String>>) -> () {
         next = next + line_str.parse::<i32>().unwrap();
     }
 
-    println!("Exercise 1 - part 2: {}", maxed_elves.iter().sum::<i32>());
+    println!("Day 1 - part 2: {}", maxed_elves.iter().sum::<i32>());
 }
