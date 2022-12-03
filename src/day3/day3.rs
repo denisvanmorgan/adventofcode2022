@@ -31,8 +31,7 @@ fn get_sum_from_chars(duplicate_chars: &Vec<char>) -> u32 {
     let mut sum: u32 = 0;
 
     for duplicate_char in duplicate_chars {
-        sum += (duplicate_char.to_string().as_bytes().first().unwrap()
-            - get_offset_for_char(&duplicate_char)) as u32;
+        sum += get_sum_for_char(&duplicate_char);
     }
 
     return sum;
