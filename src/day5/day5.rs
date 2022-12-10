@@ -66,7 +66,6 @@ fn calculate_stack_positions(lines: &Vec<IoResult<String>>, pick_individually: b
         let mut buffer = stacks.get_mut(&from).unwrap().split_off(from_vec.len() - amount);
 
         if pick_individually {
-            // Reverse buffer so we end up with correct order
             buffer = buffer.into_iter().rev().collect();
         }
 
